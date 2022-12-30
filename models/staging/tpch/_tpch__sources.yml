@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: snowflake_sample_data
+    schema: TPCH_SF1
+    tables:
+      - name: orders
+      - name: lineitem
+      - name: customer
+      - name: region
+      
