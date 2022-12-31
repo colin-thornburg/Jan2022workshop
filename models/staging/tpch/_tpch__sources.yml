@@ -6,6 +6,11 @@ sources:
     schema: TPCH_SF1
     tables:
       - name: orders
+        columns:
+        - name: order_id
+          tests:
+            - not_null
+            - unique
       - name: lineitem
       - name: customer
       - name: nation
