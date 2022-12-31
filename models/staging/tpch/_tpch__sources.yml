@@ -8,5 +8,5 @@ sources:
       - name: orders
       - name: lineitem
       - name: customer
-      - name: region
+      - name: nation
       
