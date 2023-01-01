@@ -8,6 +8,7 @@ sources:
       - name: orders
         columns:
         - name: order_id
+          description: The unique order identifier
           tests:
             - not_null
             - unique
