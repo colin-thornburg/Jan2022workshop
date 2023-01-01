@@ -26,6 +26,6 @@ select
     line_item.commit_date,
     line_item.receipt_date,
     line_item.ship_mode,
-    line_item.extended_price,
+    line_item.extended_price as price,
     line_item.quantity 
     from orders join line_item on orders.order_key = line_item.order_key
