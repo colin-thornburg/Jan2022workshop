@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: tpch
+    database: snowflake_sample_data
+    schema: TPCH_SF1
+    tables:
+      - name: orders
+        columns:
+        - name: order_id
+          description: The unique order identifier
+          tests:
+            - not_null
+            - unique
+      - name: lineitem
+      - name: customer
+      - name: nation
+      
